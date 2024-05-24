@@ -1,15 +1,13 @@
-const Posts = ({title,name}) =>{
-    // logic
-    // console.log(props)
+import Post from "./Post";
 
-    //return logic + front end
-    return(
-        <div>
-            <h1>{title}</h1>
-            <h3> author : {name} </h3>
-            <p>learn python code </p>
-        </div>
-    )
-}
+const Posts = ({ title, posts }) => {
+  return (
+    <div>
+      {posts.map((post, index) => (
+        <Post key={index} title={post} name={title} />
+      ))}
+    </div>
+  );
+};
 
-export default Posts
+export default Posts;

@@ -1,7 +1,7 @@
 import './App.css';
 import Posts from './components/Posts';
-import { useState } from 'react';
 import CreatePost from './components/CreatePost';
+import { useState } from 'react';
 
 function App() {
   // logic
@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <>
-        <Posts title={title} name={name} />
+        <Posts title={title} posts={posts} />
         <CreatePost posts={posts} setPost={setPost} text={text} setText={setText} />
       </>
     </div>
