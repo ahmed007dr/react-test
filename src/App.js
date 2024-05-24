@@ -1,19 +1,21 @@
 import './App.css';
-import Posts from './componantes/Posts';
-import CreatePost from './componantes/CreatePost';
+import Posts from './components/Posts';
 import { useState } from 'react';
+import CreatePost from './components/CreatePost';
+
 function App() {
   // logic
-  let name = ' ahmed mohamed '
-  let title = ' python django '
+  let name = ' ahmed mohamed ';
+  let title = ' python django ';
+  const [text, setText] = useState('');
+  const [posts, setPost] = useState([]);
 
-  //render logic + frontend
+  // render logic + frontend
   return (
     <div className="App">
       <>
- 
-        <Posts title = {title} name = {name} />
-        <CreatePost />
+        <Posts title={title} name={name} />
+        <CreatePost posts={posts} setPost={setPost} text={text} setText={setText} />
       </>
     </div>
   );
