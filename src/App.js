@@ -1,15 +1,17 @@
 import './App.css';
 import Posts from './componantes/Posts';
 import CreatePost from './componantes/CreatePost';
-
+import { useState } from 'react';
 function App() {
   // logic
-  let name = 'ahmed mohamed'
+  const [name,setName] = useState('ahmed mohamed')
 
   const hello = () =>{
-    name='ali'
-    console.log(name)
-  }
+    setName('embabi')
+    }
+
+
+
 
   //render logic + frontend
   return (
