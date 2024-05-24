@@ -4,25 +4,16 @@ import CreatePost from './componantes/CreatePost';
 import { useState } from 'react';
 function App() {
   // logic
-  const [name,setName] = useState('ahmed mohamed')
-
-  const hello = () =>{
-    setName('embabi')
-    }
-
-
-
+  let name = ' ahmed mohamed '
+  let title = ' python django '
 
   //render logic + frontend
   return (
     <div className="App">
       <>
-      <h1>hello {name}</h1>
-      <button onClick={hello}>CLICK</button>
-{/* 
-        <Posts name={name} title={title}/>
-
-        <CreatePost /> */}
+ 
+        <Posts title = {title} name = {name} />
+        <CreatePost />
       </>
     </div>
   );
