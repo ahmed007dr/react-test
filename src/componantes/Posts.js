@@ -1,13 +1,12 @@
-const Posts = (props) =>{
+const Posts = ({title,name}) =>{
     // logic
-    console.log(props)
-
+    // console.log(props)
 
     //return logic + front end
     return(
         <div>
-            <h1>{props.title}</h1>
-            <h3> author : {props.name} </h3>
+            <h1>{title}</h1>
+            <h3> author : {name} </h3>
             <p>learn python code </p>
         </div>
     )
